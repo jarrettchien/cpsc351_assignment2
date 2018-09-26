@@ -18,15 +18,15 @@ char input[100];
 string input2;
 // List of commands: dir, help, vol, path, tasklist, notepad, echo, color, ping
 const string dir = "dir",
-			quit = "quit",
-			help = "help",
-			vol = "vol",
-			path = "path",
-			tasklist = "tasklist",
-			notepad = "notepad",
-			echo = "echo",
-			color = "color",
-			ping = "ping";;
+	quit = "quit",
+	help = "help",
+	vol = "vol",
+	path = "path",
+	tasklist = "tasklist",
+	notepad = "notepad",
+	echo = "echo",
+	color = "color",
+	ping = "ping";
 
 DWORD WINAPI systemCall(LPVOID Param) {
 	if (input == dir) {
@@ -66,7 +66,6 @@ int main()
 	
 	DWORD ThreadID;
 	HANDLE ThreadHandle;
-	char Parameter = *input;
 
 	while (1) {
 		cout << "Enter a command: ";
